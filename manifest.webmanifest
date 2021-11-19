@@ -1,0 +1,6 @@
+{
+  "name": "Scroll Bug Webkit Standalone PWA",
+  "short_name": "ScrollBugWebkitPWA",
+  "start_url": "/",
+  "display": "standalone"
+}
