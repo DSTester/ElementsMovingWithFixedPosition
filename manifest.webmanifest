@@ -1,6 +1,6 @@
 {
-  "name": "Example:elements floating with position=fixed",
-  "short_name": "Floating Footer",
+  "name": "Example:elements moving with position=fixed",
+  "short_name": "moving fixed pos",
   "start_url": "./index.html",
   "display": "standalone"
 }
