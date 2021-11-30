@@ -1,5 +1,7 @@
 # HTML-Elements moving with position=fixed when scrolling
 
+## This is an duplicate of https://bugs.webkit.org/show_bug.cgi?id=218983
+
 ## Summary
 An footer element with the CSS properties `position=fixed` and `bottom=0` will get scrolled up and hides the content behind it. This happens if you used the keyboard and rotate your device from landscape to portrait. That's a problem because it's hard to reach the content hidden by the footer. It seems to be an bug in webkit with installed App's on mobile devices.
 
@@ -14,9 +16,7 @@ An footer element with the CSS properties `position=fixed` and `bottom=0` will g
 8. The footer gets scrolled with the content and hides it
 
 ## Description
-May be connected to this webkit bugs:
-* https://bugs.webkit.org/show_bug.cgi?id=218465
-* https://bugs.webkit.org/show_bug.cgi?id=218983
+May be connected to this webkit bug https://bugs.webkit.org/show_bug.cgi?id=218465
 
 It seems to be connected to the value of visualViewport.height. After the keyboard usage and rotation the value is to low.
 On my iPad the value should change from 717 to 1282 on rotation, but it changes to 980.
