@@ -1,6 +1,6 @@
 {
-  "name": "Scroll Bug Webkit Standalone PWA",
-  "short_name": "ScrollBugWebkitPWA",
-  "start_url": "/",
+  "name": "Example:elements floating with position=fixed",
+  "short_name": "Floating Footer",
+  "start_url": "/index.html",
   "display": "standalone"
 }

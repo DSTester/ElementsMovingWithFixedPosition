@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Webkit Standalone PWA Scroll Bug Example</title>
+    <title>Example:elements floating with position=fixed</title>
     <link rel="manifest" href="manifest.webmanifest">
     <style>
         .container { padding-bottom: 60px; }
@@ -27,6 +27,7 @@
 <body>
 <div class="container">
     <div class="info">
+        <span>visualViewport.height: <span id="heightvalue">Not available</span></span><br/>
         <span>visualViewport.pageTop: <span id="pagetopvalue">Not available</span></span><br/>
     </div>
     <div class="content">
@@ -70,6 +71,7 @@
     if(window.visualViewport!==undefined) {
         window.setInterval(function () {
             document.getElementById('pagetopvalue').innerHTML = window.visualViewport.pageTop;
+            document.getElementById('heightvalue').innerHTML = window.visualViewport.height;
         }, 100);
     }
 </script>
